@@ -5,6 +5,7 @@ console.log(theme);
 
 const ButtonStyled = styled.button`
     cursor: pointer;
+    padding: 16px;
 
     
 `

@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
-import { Button } from 'components/FeedbackOptions/Button';
 import Notification from 'components/Notification';
 import Statistics from 'components/Statistics';
+import ButtonStyled from 'components/FeedbackOptions/Button.styled';
 
 function Section({ title, text, good, neutral, bad, total, positive, onGoodFeedback, onNeutralFeedback, onBadFeedback }) {
     return (
     <section>
         <div>
             <h2>{title}</h2>
-            <Button onClick={onGoodFeedback}>Good</Button>
-            <Button onClick={onNeutralFeedback}>Neutral</Button>
-            <Button onClick={onBadFeedback}>Bad</Button>
+            <ButtonStyled type = 'button' onClick={onGoodFeedback}>Good</ButtonStyled>
+            <ButtonStyled type = 'button' onClick={onNeutralFeedback}>Neutral</ButtonStyled>
+            <ButtonStyled type = 'button' onClick={onBadFeedback}>Bad</ButtonStyled>
         </div>
         <div>
             <h2>{text}</h2>
