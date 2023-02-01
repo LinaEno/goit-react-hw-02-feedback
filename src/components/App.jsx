@@ -9,7 +9,7 @@ class App extends Component {
     bad: 0
   }
   countTotalFeedback = (prevState) => {
-    // console.log(prevState);
+    // console.log(state);
     // let totalFeedback = 0;
     // const tt = Object.values(prevState);
     // console.log(tt);
