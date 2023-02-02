@@ -14,7 +14,7 @@ function Section({ title, text, good, neutral, bad, total, positive, onGoodFeedb
         </div>
         <div>
                 <h2>{text}</h2>
-                {{total} === "0"
+                {total === 0
                     ? <Notification message='There is no feedback' />
                     : <Statistics good={good}
                     neutral={neutral}
