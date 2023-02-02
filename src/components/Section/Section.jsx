@@ -13,13 +13,16 @@ function Section({ title, text, good, neutral, bad, total, positive, onGoodFeedb
             <ButtonStyled type = 'button' onClick={onBadFeedback}>Bad</ButtonStyled>
         </div>
         <div>
-            <h2>{text}</h2>
-            <Notification message='There is no feedback' />
-            <Statistics good={good}
+                <h2>{text}</h2>
+                {{total} === "0"
+                    ? <Notification message='There is no feedback' />
+                    : <Statistics good={good}
                     neutral={neutral}
                     bad={bad}
                     total={total}
-                    positive={positive} />
+                    positive={positive} />}
+            
+            
         </div>
     </section>
     );

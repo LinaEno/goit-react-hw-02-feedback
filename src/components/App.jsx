@@ -8,7 +8,10 @@ class App extends Component {
     neutral: 0,
     bad: 0
   }
-  countTotalFeedback = (prevState) => {
+  countTotalFeedback = () => {
+    let total = this.state.good + this.state.neutral + this.state.bad
+    return total
+  }
     // console.log(state);
     // let totalFeedback = 0;
     // const tt = Object.values(prevState);
@@ -18,11 +21,10 @@ class App extends Component {
     //   console.log(totalFeedback);
     //   return totalFeedback;
     // }
-   }
+  //  }
   countPositiveFeedbackPercentage = () => { 
-    // let positiveFeedback = (this.state.good / this.countTotalFeedback()) * 100;
-    // console.log(positiveFeedback);
-    // return positiveFeedback;
+    let positiveFeedback = Math.floor((this.state.good / this.countTotalFeedback()) * 100);
+    return positiveFeedback;
 
   }
   countGoodFeedback = () => { 
