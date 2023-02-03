@@ -58,8 +58,8 @@ class App extends Component {
       good={this.state.good}
       neutral={this.state.neutral}
       bad={this.state.bad}
-      total={this.countTotalFeedback}
-      positive={this.countPositiveFeedbackPercentage} />
+      total={this.countTotalFeedback()}
+      positive={this.countPositiveFeedbackPercentage()} />
   }
 }
 
