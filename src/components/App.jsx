@@ -44,7 +44,12 @@ class App extends Component {
   //   })
   // }
 
-  onLeaveFeedback = () => {
+  onLeaveFeedback = (option) => {
+    // console.log(option)
+    
+    this.setState({
+      [option]: this.state[option]+1
+    })
     // this.setState((option) => {
     //   console.log(option)
     //   const tt = Object.keys(option);
@@ -55,16 +60,13 @@ class App extends Component {
     //   return key+1
     //   }
     // })
-    this.setState((prevState) => { 
-      console.log(prevState)
-      const values = Object.values(prevState);
-      console.log(values)
-      for (const value of values) {
-
-        return value+1
-      }
-
-    })
+    // this.setState((prevState) => { 
+    //   console.log(prevState)
+    //   const keys = Object.keys(prevState);
+    //   console.log(keys)
+    //   [keys]=prevState[keys]+1
+    //   return [keys]
+    // })
   }
   
   render() {
