@@ -2,14 +2,17 @@ import styled from '@emotion/styled';
 
 const ButtonStyled = styled.button`
   cursor: pointer;
-  padding: 10px 16px;
-  background-color: #c9dbb8;
+  padding: ${p => p.theme.space[4]}px;
+  background-color: ${p => p.theme.colors.btnBg};
   outline: none;
-  border-color: #e8e8e8;
-  margin-right: 20px;
+  border-color: ${p => p.theme.colors.borderBtn};
+  margin-right: ${p => p.theme.space[4]}px;
+  border-radius: ${p => p.theme.borders.borderRadius}px;
+  font-size: ${p => p.theme.fontSizes.m};
+  text-transform: uppercase;
   &:hover,
   &:focus {
-    background-color: #607949;
+    background-color: ${p => p.theme.colors.hoverBgColor};
     color: ${p => p.theme.colors.white};
   }
 `;

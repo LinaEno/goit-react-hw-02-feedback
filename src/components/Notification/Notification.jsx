@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import NotificationStyle from './Notification.styled';
 
-const Notification = ({ message}) => {
-    return <p>{ message }</p>
-}
+const Notification = ({ message }) => {
+  return <NotificationStyle>{message}</NotificationStyle>;
+};
 
 Notification.propTypes = {
-    message: PropTypes.string,
-}
+  message: PropTypes.string,
+};
 
 export default Notification;

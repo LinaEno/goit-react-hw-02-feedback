@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
+import SectionStyle from './Section.styled';
+import TitleSectionStyle from './TitleSection.styled';
 function Section({ title, children }) {
-    return (
-    <section>
-        <h2>{title}</h2>
-        {children}
-    </section>
-    );
+  return (
+    <SectionStyle>
+      <TitleSectionStyle>{title}</TitleSectionStyle>
+      {children}
+    </SectionStyle>
+  );
 }
 
 Section.propTypes = {
-    title: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default Section;
