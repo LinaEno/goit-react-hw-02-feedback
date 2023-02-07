@@ -22,27 +22,6 @@ class App extends Component {
     );
     return positiveFeedback;
   };
-  // countGoodFeedback = () => {
-  //   this.setState((prevState) => {
-  //     return {
-  //       good: prevState.good+1
-  //     }
-  //   })
-  // }
-  // countNeutralFeedback= () => {
-  //   this.setState((prevState) => {
-  //     return {
-  //       neutral: prevState.neutral+1
-  //     }
-  //   })
-  // }
-  // countBadFeedback= () => {
-  //   this.setState((prevState) => {
-  //     return {
-  //       bad: prevState.bad + 1
-  //     }
-  //   })
-  // }
 
   onLeaveFeedback = option => {
     console.log(option);
