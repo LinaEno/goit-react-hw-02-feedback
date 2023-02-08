@@ -3,7 +3,6 @@ import Section from './Section';
 import Notification from 'components/Notification';
 import Statistics from 'components/Statistics';
 import FeedbackOptions from './FeedbackOptions';
-// import { logDOM } from '@testing-library/react';
 
 class App extends Component {
   state = {
